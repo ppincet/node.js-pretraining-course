@@ -1,0 +1,2 @@
+-- SQL: Delete a todo by id
+-- TODO: implement 
