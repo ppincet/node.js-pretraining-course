@@ -1,5 +1,5 @@
 ---
-topic: "SQL DELETE"
+topic: "SQL AGGREGATION"
 taskNumber: 5
 ---
 

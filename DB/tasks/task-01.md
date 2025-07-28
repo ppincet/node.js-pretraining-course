@@ -1,5 +1,5 @@
 ---
-topic: "SQL SELECT"
+topic: "SQL SCHEMA"
 taskNumber: 1
 ---
 

@@ -1,5 +1,5 @@
 ---
-topic: "SQL JOIN"
+topic: "SQL INDEX/OPTIMIZE"
 taskNumber: 6
 ---
 

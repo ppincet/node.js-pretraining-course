@@ -1,5 +1,5 @@
 ---
-topic: "SQL WHERE"
+topic: "SQL CRUD"
 taskNumber: 2
 ---
 

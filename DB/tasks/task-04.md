@@ -1,5 +1,5 @@
 ---
-topic: "SQL UPDATE"
+topic: "SQL RELATIONSHIPS"
 taskNumber: 4
 ---
 

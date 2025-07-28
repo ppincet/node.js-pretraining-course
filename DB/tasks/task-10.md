@@ -1,5 +1,5 @@
 ---
-topic: "NoSQL Delete"
+topic: "REDIS CACHING"
 taskNumber: 10
 ---
 
