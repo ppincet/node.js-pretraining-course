@@ -1,2 +1,0 @@
--- SQL: Select all todos
--- TODO: implement 

@@ -1,2 +1,0 @@
--- SQL: Select todos by status
--- TODO: implement 

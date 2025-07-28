@@ -1,2 +1,0 @@
--- SQL: Join todos and users
--- TODO: implement 
