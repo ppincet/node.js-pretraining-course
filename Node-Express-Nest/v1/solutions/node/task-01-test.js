@@ -8,7 +8,7 @@ const MessageSystem = require("./task-01");
 class MessageSystemTester {
   constructor() {
     this.testResults = [];
-    this.messenger = null;
+    this.messenger = new MessageSystem();
   }
 
   /**
