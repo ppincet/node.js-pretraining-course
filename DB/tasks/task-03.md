@@ -24,7 +24,7 @@ In this task, you will use **raw SQL** to write queries that filter and sort dat
 
 ## Document Your Work
 
-After completing all previous steps, document your work in `solutions/task-03.txt`:
+After completing all previous steps, document your work in `solutions/task-03.sql`:
 
 - Write down all terminal commands you used to interact with the database.
 - Include all SQL queries you executed.
