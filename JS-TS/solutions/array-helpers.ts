@@ -12,22 +12,33 @@ function mapArray<T, R>(source: readonly T[], mapper: (item: T, index: number) =
   return result;
 }
 
-export function filterArray<T>(source: readonly T[], predicate: (item: T, index: number) => boolean): T[] {
+function filterArray<T>(source: readonly T[], predicate: (item: T, index: number) => boolean): T[] {
   if(!source)  throw new TypeError('filterArray: not implemented');
   const result : T[] = [];
+  source.forEach((item, idx) => {
+    if(predicate(item, idx)) {
+      result.push(item);
+    }
+  });
   return result;
 }
 
-export function reduceArray<T, R>(source: readonly T[], reducer: (acc: R, item: T, index: number) => R, initial: R): R {
-  throw new Error('reduceArray: not implemented');
+function reduceArray<T, R>(source: readonly T[], reducer: (acc: R, item: T, index: number) => R, initial: R): R {
+  if(!source) throw new TypeError('reduceArray: not implemented');
+  let result : R = initial;
+  source.forEach((item, idx) => {
+    result = reducer(result, item, idx);
+  });
+  return result;
 }
 
-export function partition<T>(source: readonly T[], predicate: (item: T) => boolean): [T[], T[]] {
-  throw new Error('partition: not implemented');
-}
+// function partition<T>(source: readonly T[], predicate: (item: T) => boolean): [T[], T[]] {
+//   if(!source) throw new TypeError('partition: not implemented');
+// }
 
-export function groupBy<T, K extends PropertyKey>(source: readonly T[], keySelector: (item: T) => K): Record<K, T[]> {
-  throw new Error('groupBy: not implemented');
-}
+// function groupBy<T, K extends PropertyKey>(source: readonly T[], keySelector: (item: T) => K): Record<K, T[]> {
+//   // if(!source) throw new TypeError('groupBy: not implemented');
+//   // const result : Record<K, T[]> = 
+// }
 
-export { mapArray}
+export { mapArray, filterArray, reduceArray }
