@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": true,                                   
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "allowImportingTsExtensions" : true,
+    "target": "ES6",
+    "outDir": "./dist",
+    "noEmit" : true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
