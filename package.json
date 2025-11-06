@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "ts-node --files ./utests/factory.ts",
+    "start": "ts-node --files ",
     "test": "jest",
     "test:all": "jest",
     "test:docker-git": "jest tests/docker-git.test.js",
