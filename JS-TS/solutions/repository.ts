@@ -1,9 +1,10 @@
 export class InMemoryRepository<T extends { id: number }> {
   // private storage
   private items: T[] = [];
-
+  
   add(entity: T): T {
-    throw new Error('add: not implemented');
+    //throw new Error('add: not implemented');
+    this.items.push(entity);
   }
 
   update(id: number, patch: Partial<T>): T {
@@ -19,6 +20,7 @@ export class InMemoryRepository<T extends { id: number }> {
   }
 
   findAll(): T[] {
-    throw new Error('findAll: not implemented');
+    //throw new Error('findAll: not implemented');
+    return [...this.items];
   }
 }
