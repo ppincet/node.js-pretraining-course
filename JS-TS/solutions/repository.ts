@@ -1,7 +1,7 @@
 export class InMemoryRepository<T extends { id: number }> {
   // private storage
   private items: T[] = [];
-  
+
   add(entity: T): T {
     //throw new Error('add: not implemented');
     this.items.push(entity);
@@ -12,11 +12,13 @@ export class InMemoryRepository<T extends { id: number }> {
   }
 
   remove(id: number): void {
-    throw new Error('remove: not implemented');
+    //throw new Error('remove: not implemented');
+    this.items.filter(item => item.id != id);
   }
 
   findById(id: number): T | undefined {
-    throw new Error('findById: not implemented');
+    //throw new Error('findById: not implemented');
+    return this.items.find(item => item.id == id);
   }
 
   findAll(): T[] {
