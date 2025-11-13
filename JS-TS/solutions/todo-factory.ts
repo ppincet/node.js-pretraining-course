@@ -2,7 +2,7 @@ import { Todo, NewTodo, TodoStatus } from './types';
 
 let nextId = 1;
 
-export function createTodo(input: NewTodo): Todo {
+const createTodo = (input: NewTodo): Todo  => {
   if(!input) throw new Error('createTodo: not implemented');
   return {
     ...input,
@@ -11,4 +11,5 @@ export function createTodo(input: NewTodo): Todo {
     status:  TodoStatus.PENDING
   } as Todo;
 }
+export { createTodo }
 
