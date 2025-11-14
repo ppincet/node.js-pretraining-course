@@ -6,8 +6,8 @@ function mapArray<T, R>(source: readonly T[], mapper: (item: T, index: number) =
   
   if(!source) throw new TypeError('mapArray: not implemented');
   const result : R[] = [];
- source.forEach((item, idx) => {
-    result.push(mapper(item, idx));
+  source.forEach((item, idx) => {
+     result.push(mapper(item, idx));
   });
   return result;
 }

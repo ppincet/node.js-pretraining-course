@@ -1,7 +1,13 @@
+import { mapArray } from './array-helpers';
 import { Todo, TodoStatus } from './types';
 
 export function toggleAll(state: Todo[], completed: boolean): Todo[] {
-  throw new Error('toggleAll: not implemented');
+  //throw new Error('toggleAll: not implemented');
+  return state.map(item => {
+    if(item.status === TodoStatus.IN_PROGRRESS) {
+      return item;
+    }
+  });
 }
 
 export function clearCompleted(state: Todo[]): Todo[] {

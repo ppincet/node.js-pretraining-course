@@ -34,6 +34,13 @@ export class InMemoryRepository<T extends { id: number }> {
 
   findAll(): T[] {
     //throw new Error('findAll: not implemented');
+
+    /// strict using (for simple data only)
     return JSON.parse(JSON.stringify(this.items)) as T[];
+
+    /// shallow copy
+    return [...this.items];
+
+    /// 3rd party solutions for deep copy (out of scope)
   }
 }
